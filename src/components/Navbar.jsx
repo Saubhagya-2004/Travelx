@@ -10,8 +10,8 @@ const Navbar =()=>{
     }
     return(
         <>
-        <div className=" flex justify-between items-center h-20 px-7">
-            <div className=" font-bold cursor-pointer text-3xl md:text-4xl text-blue-500 ">
+        <div className=" flex justify-between items-center h-20 px-7 w-full absolute  z-20">
+            <div className=" font-bold cursor-pointer text-3xl md:text-4xl text-white md:text-blue-500 ">
                 <h1 >TRAVEL.X</h1>
             </div>
             <ul className=" font-semibold hidden md:flex">
@@ -23,16 +23,16 @@ const Navbar =()=>{
             </ul>
             <div className=" hidden md:flex mr-4 ">
                 <BsSearch className="mr-3 hover:text-blue-500" size={20}/>
-                <BsPerson className="bg-gray-400 rounded-full " size={20}/>
+                <BsPerson className="bg-gray-200 rounded-full " size={20}/>
                 <p className="ml-2 uppercase text-black cursor-pointer">user</p>
             </div>
-            <div onClick={nav} className="md:hidden block z-20 mr-5 border-2 border-cyan-400">
+            <div onClick={nav} className="md:hidden block z-20  border-2 border-cyan-400 ">
                 {open?<AiOutlineClose size={23}/>:<AiOutlineMenu size={23}/>}
               
                
             </div>
             {/* mobile menu */}
-            <div onClick={nav} className={open?'absolute  top-0  bg-gray-100 w-full left-0 px-4 py-7 flex flex-col duration-500':'absolute top-[-100%] w-full duration-700'}>
+            <div onClick={nav} className={open?'absolute  top-0  bg-gray-300 w-full left-0 px-4 py-7 flex flex-col duration-500':'absolute top-[-800%] left-0  duration-700 w-full '}>
             {/* bg-gray-100/90 transparency */}
                 <ul className="text-2xl font-medium ">
                     <h1 className="font-bold cursor-pointer text-xl  md:text-2xl text-blue-500">TRAVEL.X</h1>
