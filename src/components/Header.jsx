@@ -6,7 +6,7 @@ const Header=()=>{
     return(
         <>
 
-        <div className="w-full h-screen relative">
+        <div className="w-full  h-screen relative">
            <video src={viedio} autoPlay loop muted className="w-full h-full object-cover"></video>
         <div className="w-full h-full absolute left-0 top-0 bg-gray-800/10">
         
@@ -19,7 +19,7 @@ const Header=()=>{
            
             <form className="flex justify-between items-center mx-auto max-w-[600px] w-full border-2 border-white p-1 text-black rounded-2xl bg-gray-100">
                 <div >
-                    <input className="w-[400px] sm:w-[500px] focus:outline-none font-semibold placeholder:text-pink-600" type="text" placeholder="Search Destination" />
+                    <input className=" sm:w-[500px] focus:outline-none font-semibold placeholder:text-pink-600" type="text" placeholder="Search Destination" />
                 </div>
                 <div className="px-5 ">
                     <button><AiOutlineSearch size={20}/>

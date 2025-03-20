@@ -3,7 +3,7 @@ import borabora from '../assets/borabora.jpg'
 import borabora2 from '../assets/borabora2.jpg'
 import keywest from '../assets/keywest.jpg'
 import maldives from '../assets/maldives.jpg'
-import maldives2 from '../assets/maldives2.jpg'
+import Paris from '../assets/paris.jpg'
 
 function Destination() {
   return (
@@ -15,7 +15,7 @@ function Destination() {
              <img className="w-full h-full object-cover rounded-2xl " src={borabora2} alt="" />
              <img className="w-full h-full object-cover rounded-2xl " src={keywest} alt="" />
              <img className="w-full h-full object-cover rounded-2xl " src={maldives} alt="" />
-             <img className="w-full h-full object-cover rounded-2xl " src={maldives2} alt="" />
+             <img className="w-full h-full object-cover rounded-2xl " src={Paris} alt="" />
         </div>
         <h2 className="text-pink-400 ">ENJOY YOUR TRIP !!</h2>
     </div>
