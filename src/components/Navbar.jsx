@@ -17,10 +17,10 @@ const Navbar =()=>{
             </div>
             <ul className=" font-semibold hidden md:flex">
                 <li className="p-5" ><a href="#home">Home</a></li>
-                <li className="p-5"><a href="#destination">Destination</a></li>
-                <li className="p-5"><a href="#book" onClick={nav}>Book</a></li>
-                <li className="p-5"><a href="#travel"onClick={nav}>Travel</a></li>
-                <li className="p-5"><a href="#view"onClick={nav}>View</a></li>
+                <li className="p-5 "><a href="#destination">Destination</a></li>
+                <li className="p-5 "><a href="#book" >Book</a></li>
+                <li className="p-5"><a href="#travel">Travel</a></li>
+                <li className="p-5"><a href="#view">View</a></li>
             </ul>
             <div className=" hidden md:flex mr-4 ">
                 <BsSearch className="mr-3 hover:text-blue-500" size={20}/>
@@ -33,7 +33,7 @@ const Navbar =()=>{
                
             </div>
             {/* mobile menu */}
-            <div onClick={nav} className={open?'absolute  top-0  bg-gray-300 w-full left-0 px-4 py-7 flex flex-col duration-500':'absolute top-[-800%] left-0  duration-500 w-full '}>
+            <div onClick={nav} className={open?'absolute  top-0  bg-gray-300 w-full left-0 px-4 py-7 flex flex-col duration-500 md:hidden':'absolute top-[-800%]  left-0  duration-500 w-full '}>
             {/* bg-gray-100/90 transparency */}
                 <ul className="text-2xl font-medium ">
                     <h1 className="font-bold cursor-pointer text-xl  md:text-2xl text-blue-500">TRAVEL.X</h1>
