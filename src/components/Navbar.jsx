@@ -16,11 +16,11 @@ const Navbar =()=>{
                 <h1 >TRAVEL.X</h1>
             </div>
             <ul className=" font-semibold hidden md:flex">
-                <li className="p-5" >Home</li>
-                <li className="p-5">Destination</li>
-                <li className="p-5">Book</li>
-                <li className="p-5">Travel</li>
-                <li className="p-5">View</li>
+                <li className="p-5" ><a href="#home">Home</a></li>
+                <li className="p-5"><a href="#destination">Destination</a></li>
+                <li className="p-5"><a href="#book" onClick={nav}>Book</a></li>
+                <li className="p-5"><a href="#travel"onClick={nav}>Travel</a></li>
+                <li className="p-5"><a href="#view"onClick={nav}>View</a></li>
             </ul>
             <div className=" hidden md:flex mr-4 ">
                 <BsSearch className="mr-3 hover:text-blue-500" size={20}/>
