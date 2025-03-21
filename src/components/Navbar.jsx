@@ -12,20 +12,20 @@ const Navbar =()=>{
         
         <>
         <div className=" flex justify-between items-center h-20 px-7 w-full absolute  z-20">
-            <div className=" font-bold cursor-pointer text-3xl md:text-4xl text-white md:text-blue-500 ">
+            <div className=" font-bold cursor-pointer text-3xl md:text-4xl text-white ">
                 <h1 >TRAVEL.X</h1>
             </div>
-            <ul className=" font-semibold hidden md:flex">
+            <ul className=" font-semibold hidden md:flex text-gray-200">
                 <li className="p-5" ><a href="#home">Home</a></li>
                 <li className="p-5 "><a href="#destination">Destination</a></li>
                 <li className="p-5 "><a href="#book" >Book</a></li>
                 <li className="p-5"><a href="#travel">Travel</a></li>
                 <li className="p-5"><a href="#view">View</a></li>
             </ul>
-            <div className=" hidden md:flex mr-4 ">
+            <div className=" hidden md:flex mr-4  text-teal-300">
                 <BsSearch className="mr-3 hover:text-blue-500" size={20}/>
                 <BsPerson className="bg-gray-200 rounded-full " size={20}/>
-                <p className="ml-2 uppercase text-black cursor-pointer">user</p>
+                <p className="ml-2 uppercase text-white cursor-pointer">user</p>
             </div>
             <div onClick={nav} className="md:hidden block z-20  border-2 border-cyan-400 ">
                 {open?<AiOutlineClose size={23}/>:<AiOutlineMenu size={23}/>}

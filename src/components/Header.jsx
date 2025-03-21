@@ -1,5 +1,5 @@
 import React from "react";
-import viedio from '../assets/viedio.mp4'
+import viedio from "../assets/beach.mp4";
 import { AiOutlineSearch } from "react-icons/ai";
 import { ReactTyped } from "react-typed";
 const Header=()=>{
