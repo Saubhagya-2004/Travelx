@@ -12,7 +12,8 @@ const Header=()=>{
         
         <div className=" top-0 w-full h-full flex flex-col justify-center text-center text-white">
             <h2 className="text-3xl md:text-4xl p-4">First class Travel</h2>
-            <h3 className="text-2xl md:text-3xl pb-2">Top 1% locations <ReactTyped className="text-white" strings={['Worldwide']} 
+            <h3 className="text-2xl md:text-3xl pb-2">Top 1% locations <ReactTyped className="text-white
+            " strings={['Worldwide']} 
                     typeSpeed={340}
                     backSpeed={200}
                     loop/>  </h3>
