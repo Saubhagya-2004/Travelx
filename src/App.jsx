@@ -5,30 +5,28 @@ import Destination from './components/Destination'
 import Booking from './components/Booking'
 import Selects from './components/Selects'
 import View from './components/View'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 function App() {
   return (
-    <>
-    <div id='home'>
-
-    <Navbar/>
-    </div>
-    <Header/>
-    <div id='destination'>
-
-    <Destination/>
-    </div>
-    <div id='book'>
-
-    <Booking/>
-    </div>
-    <div id='travel'>
-    <Selects/>
-    </div>
-    <div id='view'>
-
-    <View/>
-    </div>
-    </>
+    <BrowserRouter>
+      <Navbar /> {/* Navbar is outside Routes so it's always visible */}
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Header />
+            <Destination />
+            <Booking />
+            <Selects />
+            <View />
+          </>
+        } />
+        <Route path="/destination" element={<Destination />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/selects" element={<Selects />} />
+        <Route path="/view" element={<View />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
